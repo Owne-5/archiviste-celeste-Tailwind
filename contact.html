@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/2f46b7b8c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>L'Archiviste Céleste | L'encyclopedie Astral</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+      * {
+        font-family: Ubuntu;
+      }
+      
+      @keyframes move {
+        to {
+          background-position: 200%;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-[hsl(0,0%,0%)]">
+    <div
+      class="min-h-screen text-white grid grid-cols-1 grid-rows-[90px_1fr_auto]"
+    >
+      <header class="flex justify-center items-center top-[5px] sticky z-10">
+        <nav
+          class="bg-white text-gray-950 w-[98%] h-15 px-5 gap-5 lg:gap-0 flex justify-between items-center rounded-xl"
+        >
+          <a href="index.html"><span class="text-md bg-[linear-gradient(to_right,#fc72ff,#8f68ff,#487bff,#8f68ff,#fc72ff)] bg-clip-text bg-[length:200%_auto] text-transparent uppercase font-semibold [animation:move_8s_linear_infinite]">L'Archiviste Céleste</span></a>
+          <input
+            type="search"
+            placeholder="Rechercher"
+            class="outline-none border border-black w-[50%] lg:w-[50%] h-10 rounded-md px-5 focus:border-2 focus:border-blue-300 hidden"
+          />
+          <ul class="hidden lg:flex justify-between items-center h-full">
+            <li>
+              <a
+                href="index.html"
+                class="p-[19px] hover:bg-gray-300 transition-all"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a
+                href="article.html"
+                class="p-[19px] hover:bg-gray-300 transition-all"
+                >Articles</a
+              >
+            </li>
+            <li>
+              <a
+                href="apropos.html"
+                class="p-[19px] text-nowrap hover:bg-gray-300 transition-all"
+                >A propos</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="p-[19px] hover:bg-gray-300 transition-all"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="flex flex-col items-center">
+        <!--navbar sur les mobile et tablette-->
+        <div
+          class="lg:hidden bg-white w-[98%] h-15 rounded-xl z-50 fixed bottom-[10px] flex items-center"
+        >
+          <ul class="w-full flex items-center justify-around px-5 text-black">
+            <li>
+              <a
+                href="index.html"
+                class="flex flex-col items-center text-[12px]"
+                ><i class="fa-solid fa-house text-2xl"></i>Accueil</a
+              >
+            </li>
+            <li>
+              <a
+                href="article.html"
+                class="flex flex-col items-center text-[12px]"
+                ><i class="fa-solid fa-newspaper text-2xl"></i> Article</a
+              >
+            </li>
+            <li>
+              <a
+                href="apropos.html"
+                class="flex flex-col items-center text-[12px]"
+                ><i class="fa-solid fa-circle-info text-2xl"></i>A propos</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="flex flex-col items-center text-[12px] text-blue-500"
+                ><i class="fa-solid fa-phone text-2xl"></i>Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <section
+          class="w-full min-h-screen py-5 flex flex-col lg:flex-row justify-center items-center bg-[url('/Images/Fond/hfond1.jpg')] bg-no-repeat bg-cover bg-center"
+        >
+          <div
+            class="w-[90%] h-full p-5 flex flex-col justify-center items-center gap-5"
+          >
+            <h1 class="font-bold text-2xl">Lorem ipsum dolor sit amet.</h1>
+            <p class="w-[100%] md:w-[80%] lg:w-[80%]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              eum, molestias est consequuntur quasi vero beatae fugit harum.
+              Necessitatibus hic earum obcaecati! Saepe labore corrupti tempore
+              natus error, placeat nemo?
+            </p>
+          </div>
+          <div
+            class="w-[100%] h-full flex flex-col justify-center items-center"
+          >
+            <form
+              class="bg-[rgb(26,26,26)] shadow-xl border border-[rgb(26,26,26)] text-white w-[80%] h-[90%] flex flex-col gap-10 rounded-lg p-5"
+            >
+              <h1 class="text-center text-2xl font-bold">
+                Nous envoyer un message
+              </h1>
+              <div class="w-full h-[20%] flex justify-between gap-5">
+                <div class="w-[50%] flex flex-col justify-center">
+                  <label for="name" class="text-[13px]">Nom et Prenom</label>
+                  <input
+                    id="name"
+                    type="text"
+                    required
+                    placeholder="John Doe"
+                    class="border border-gray-500 outline-none w-[100%] h-10 px-5 rounded-md focus:border-2 focus:border-blue-700 focus:valid:border-blue-700 focus:invalid:border-red-700 transition-all"
+                  />
+                </div>
+                <div class="w-[50%] flex flex-col justify-center">
+                  <label for="num" class="text-[12px]">Numeros</label>
+                  <input
+                    id="num"
+                    type="tel"
+                    required
+                    placeholder="+33 33-33-33-33"
+                    class="border border-gray-500 outline-none w-[100%] h-10 px-5 rounded-md focus:border-2 focus:border-blue-700 focus:valid:border-blue-700 focus:invalid:border-red-700 transition-all"
+                  />
+                </div>
+              </div>
+              <div class="h-[10%]">
+                <label for="mail">Email</label>
+                <br />
+                <input
+                  id="mail"
+                  type="email"
+                  required
+                  placeholder="johndoe@gmail.com"
+                  class="border border-gray-500 outline-none w-full h-13 px-5 rounded-md focus:border-2 focus:border-blue-700 focus:valid:border-blue-700 focus:invalid:border-red-700 transition-all"
+                />
+              </div>
+              <div class="h-[40%]">
+                <label for="comment">Entrez votre message</label>
+                <br />
+                <textarea
+                  id="comment"
+                  required
+                  class="border border-gray-500 outline-none w-full h-[100%] px-5 rounded-md focus:border-2 focus:border-blue-700 focus:valid:border-blue-700 focus:invalid:border-red-700 transition-all"
+                ></textarea>
+              </div>
+              <div class="flex items-center justify-center p-5">
+                <button
+                  class="bg-white text-black uppercase font-bold rounded-md w-[60%] p-[2%] cursor-pointer hover:scale-105 transition-transform"
+                >
+                  Envoyer
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer
+        class="flex flex-col justify-center items-center bg-black p-5 gap-5 text-center"
+      >
+        <!--Footer container-->
+        <div
+          class="w-full px-10 gap-4 flex flex-col md:flex-row justify-between items-center text-white"
+        >
+          <!-- Div Logo et Reseau  -->
+          <div class="flex flex-col items-center gap-2">
+            <span class="bg-[linear-gradient(to_right,#fc72ff,#8f68ff,#487bff,#8f68ff,#fc72ff)] bg-clip-text bg-[length:200%_auto] text-transparent uppercase font-semibold [animation:move_8s_linear_infinite]">L'Archiviste Céleste</span>
+            <div class="flex flex-col gap-1">
+              <p>Nos Reseaux Sociaux</p>
+              <ul class="flex items-center text-4xl gap-5">
+                <li>
+                  <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Div address  -->
+          <div
+            class="flex flex-col items-center justify-center gap-3 text-center md:text-start"
+          >
+            <p class="text-center">Address</p>
+            <div>
+              <p>- 4829 Watson Street</p>
+              <p>- Cocody, Riviera Bonoumin à 500m d’Abidjan Mall</p>
+            </div>
+          </div>
+          <!-- Div contact  -->
+          <div class="flex flex-col items-center">
+            <p>Contact</p>
+            <p>Email: celeste@gmail.com</p>
+            <p>Boite postale: 30 BP Abidjan 2001</p>
+          </div>
+          <!--ligne de separation -->
+        </div>
+        <div class="h-1 w-[95%] bg-white"></div>
+        <span>&copy;2026 L'Archiviste Céleste - Tous droit reserve</span>
+      </footer>
+    </div>
+  </body>
+</html>
