@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/2f46b7b8c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>L'Archiviste Céleste | L'encyclopedie Astral</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+      * {
+        font-family: Ubuntu;
+      }
+
+      @keyframes move {
+        to {
+          background-position: 200%;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-[hsl(0,0%,0%)]">
+    <div
+      class="min-h-screen dark:text-white grid grid-cols-1 grid-rows-[90px_1fr_auto]"
+    >
+      <header class="flex justify-center items-center top-[5px] sticky z-10">
+        <nav
+          class="bg-white text-gray-950 w-[98%] h-15 px-5 gap-5 lg:gap-0 flex justify-between items-center rounded-xl"
+        >
+          <a href="index.html"
+            ><span
+              class="text-md bg-[linear-gradient(to_right,#fc72ff,#8f68ff,#487bff,#8f68ff,#fc72ff)] bg-clip-text bg-[length:200%_auto] text-transparent uppercase font-semibold [animation:move_8s_linear_infinite]"
+              >L'Archiviste Céleste</span
+            ></a
+          >
+          <input
+            type="search"
+            placeholder="Rechercher"
+            class="outline-none border border-black w-[50%] lg:w-[50%] h-10 rounded-md px-5 focus:border-2 focus:border-blue-300"
+          />
+          <ul class="hidden lg:flex justify-between items-center h-full">
+            <li>
+              <a
+                href="index.html"
+                class="p-[19px] hover:bg-gray-300 transition-all"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a
+                href="article.html"
+                class="p-[19px] hover:bg-gray-300 transition-all"
+                >Articles</a
+              >
+            </li>
+            <li>
+              <a
+                href="apropos.html"
+                class="p-[19px] text-nowrap hover:bg-gray-300 transition-all"
+                >A propos</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="p-[19px] hover:bg-gray-300 transition-all"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="flex flex-col items-center">
+        <!--navbar sur les mobile et tablette-->
+        <div
+          class="lg:hidden bg-white w-[98%] h-15 rounded-xl z-50 fixed bottom-[10px] flex items-center"
+        >
+          <ul class="w-full flex items-center justify-around px-5 text-black">
+            <li>
+              <a
+                href="index.html"
+                class="flex flex-col items-center text-[12px] text-blue-500"
+                ><i class="fa-solid fa-house text-2xl"></i>Accueil</a
+              >
+            </li>
+            <li>
+              <a
+                href="article.html"
+                class="flex flex-col items-center text-[12px]"
+                ><i class="fa-solid fa-newspaper text-2xl"></i> Article</a
+              >
+            </li>
+            <li>
+              <a
+                href="apropos.html"
+                class="flex flex-col items-center text-[12px]"
+                ><i class="fa-solid fa-circle-info text-2xl"></i>A propos</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="flex flex-col items-center text-[12px]"
+                ><i class="fa-solid fa-phone text-2xl"></i>Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!--Debut Section-->
+        <!-- Hero Section -->
+        <section
+          class="w-full min-h-screen flex justify-center items-center bg-[url('/Images/Fond/hfond7.jpg')] md:bg-[url('/Images/Fond/hfond4.jpg')] bg-no-repeat bg-cover bg-center"
+        >
+          <!--Hero section container-->
+          <div
+            class="w-full flex flex-col-reverse lg:flex-row lg:items-center gap-10 p-5"
+          >
+            <div class="w-[100%] h-fit px-10 flex flex-col justify-center">
+              <h1 class="text-3xl font-bold">
+                L'Archiviste Céleste : Gardien des Secrets du Cosmos.
+              </h1>
+              <p class="text-lg md:text-xl lg:text-2xl">
+                Plongez dans la plus vaste encyclopédie astrale. Déchiffrez le
+                langage des étoiles et découvrez comment les mouvements célestes
+                sculptent votre destin.
+              </p>
+            </div>
+            <div class="h-fit flex justify-center">
+              <video
+                src="Videos/Solar System.mp4"
+                autoplay
+                loop
+                controls
+                oncanplay="((this.playbackRate = 1), (this.volume = 0.2))"
+                class="rounded-lg"
+              ></video>
+            </div>
+          </div>
+        </section>
+        <section
+          class="w-full min-h-screen flex items-center bg-[url('/Images/Fond/hfond6.jpg')] bg-no-repeat bg-cover bg-center"
+        >
+          <div class="w-full flex flex-col items-center">
+            <!--Text -->
+            <div class="flex flex-col gap-5 p-10">
+              <h1
+                class="uppercase font-extrabold text-center sm:text-xl md:text-2xl lg:text-4xl"
+              >
+                Explorez et decouvrez tous les secrets de l'univers !
+              </h1>
+              <div class="h-1 bg-white w-full"></div>
+            </div>
+            <!-- Card Container -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center p-10"
+            >
+              <!-- Cards -->
+              <div
+                class="bg-[rgb(24,24,24)] w-full h-[100%] flex flex-col justify-center gap-2 p-5 border border-[rgba(255,255,255,0.2)] rounded-xl group cursor-pointer hover:scale-105 transition-transform"
+              >
+                <div class="text-4xl">
+                  <i class="fa-solid fa-earth-africa"></i>
+                </div>
+                <h3
+                  class="font-bold text-2xl text-blue-300 group-hover:text-blue-600"
+                >
+                  Planétologie
+                </h3>
+                <p>
+                  L'étude des mondes : des cratères de la Lune aux tempêtes de
+                  Jupiter et aux exoplanètes lointaines.
+                </p>
+                <a
+                  href="article.html"
+                  class="bg-blue-300 group-hover:bg-blue-600 text-center rounded-lg py-1"
+                  >Lire les articles</a
+                >
+              </div>
+              <div
+                class="bg-[rgb(24,24,24)] w-full h-[100%] flex flex-col justify-center gap-2 p-5 border border-[rgba(255,255,255,0.2)] rounded-xl group cursor-pointer hover:scale-105 transition-transform"
+              >
+                <div class="text-4xl">
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3
+                  class="font-bold text-2xl text-orange-300 group-hover:text-orange-600"
+                >
+                  Vie des Étoiles
+                </h3>
+                <p>
+                  Le cycle fascinant des astres, de leur naissance dans les
+                  nébuleuses jusqu'à l'explosion en supernova
+                </p>
+                <a
+                  href="article.html"
+                  class="bg-orange-300 group-hover:bg-orange-600 text-center rounded-lg py-1"
+                  >Lire les articles</a
+                >
+              </div>
+              <div
+                class="bg-[rgb(24,24,24)] w-full h-[100%] flex flex-col justify-center gap-2 p-5 border border-[rgba(255,255,255,0.2)] rounded-xl group cursor-pointer hover:scale-105 transition-transform"
+              >
+                <div class="text-4xl">
+                  <i class="fa-solid fa-user-astronaut"></i>
+                </div>
+                <h3
+                  class="font-bold text-2xl text-purple-300 group-hover:text-purple-600"
+                >
+                  Galaxies
+                </h3>
+                <p>
+                  Voyage au cœur de la Voie Lactée et des spirales lointaines
+                  pour comprendre les structures géantes.
+                </p>
+                <a
+                  href="article.html"
+                  class="bg-purple-300 group-hover:bg-purple-600 text-center rounded-lg py-1"
+                  >Lire les articles</a
+                >
+              </div>
+              <div
+                class="bg-[rgb(24,24,24)] w-full h-[100%] flex flex-col justify-center gap-2 p-5 border border-[rgba(255,255,255,0.2)] rounded-xl group cursor-pointer hover:scale-105 transition-transform"
+              >
+                <div class="text-4xl">
+                  <i class="fa-solid fa-meteor"></i>
+                </div>
+                <h3
+                  class="font-bold text-2xl text-indigo-300 group-hover:text-indigo-600"
+                >
+                  La Cosmologie
+                </h3>
+                <p>
+                  L'origine du Tout. Big Bang, matière noire et le destin ultime
+                  de notre univers infini.
+                </p>
+                <a
+                  href="article.html"
+                  class="bg-indigo-300 group-hover:bg-indigo-600 text-center rounded-lg py-1"
+                  >Lire les articles</a
+                >
+              </div>
+              <div
+                class="bg-[rgb(24,24,24)] w-full h-[100%] flex flex-col justify-center gap-2 p-5 border border-[rgba(255,255,255,0.2)] rounded-xl group cursor-pointer hover:scale-105 transition-transform"
+              >
+                <div class="text-4xl">
+                  <i class="fa-solid fa-seedling"></i>
+                </div>
+                <h3
+                  class="font-bold text-2xl text-green-300 group-hover:text-green-600"
+                >
+                  L'Astrobiologie
+                </h3>
+                <p>
+                  La quête ultime : sommes-nous seuls ? Recherche de
+                  biosignatures et de zones habitables.
+                </p>
+                <a
+                  href="article.html"
+                  class="bg-green-300 group-hover:bg-green-600 text-center rounded-lg py-1"
+                  >Lire les articles</a
+                >
+              </div>
+              <div
+                class="bg-[rgb(24,24,24)] w-full h-[100%] flex flex-col justify-center gap-2 p-5 border border-[rgba(255,255,255,0.2)] rounded-xl group cursor-pointer hover:scale-105 transition-transform"
+              >
+                <div class="text-4xl">
+                  <i class="fa-solid fa-atom"></i>
+                </div>
+                <h3
+                  class="font-bold text-2xl text-red-300 group-hover:text-red-600"
+                >
+                  Objets Compacts
+                </h3>
+                <p>
+                  Là où la physique se brise : trous noirs, étoiles à neutrons
+                  et singularités gravitationnelles.
+                </p>
+                <a
+                  href="article.html"
+                  class="bg-red-300 group-hover:bg-red-600 text-center rounded-lg py-1"
+                  >Lire les articles</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer
+        class="flex flex-col justify-center items-center bg-black p-5 gap-5 text-center"
+      >
+        <!--Footer container-->
+        <div
+          class="w-full px-10 gap-4 flex flex-col md:flex-row justify-between items-center text-white"
+        >
+          <!-- Div Logo et Reseau  -->
+          <div class="flex flex-col items-center gap-2">
+            <span
+              class="bg-[linear-gradient(to_right,#fc72ff,#8f68ff,#487bff,#8f68ff,#fc72ff)] bg-clip-text bg-[length:200%_auto] text-transparent uppercase font-semibold [animation:move_8s_linear_infinite]"
+              >L'Archiviste Céleste</span
+            >
+            <div class="flex flex-col gap-1">
+              <p>Nos Reseaux Sociaux</p>
+              <ul class="flex items-center text-4xl gap-5">
+                <li>
+                  <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Div address  -->
+          <div
+            class="flex flex-col items-center justify-center gap-3 text-center md:text-start"
+          >
+            <p class="text-center">Address</p>
+            <div>
+              <p>- 4829 Watson Street</p>
+              <p>- Cocody, Riviera Bonoumin à 500m d’Abidjan Mall</p>
+            </div>
+          </div>
+          <!-- Div contact  -->
+          <div class="flex flex-col items-center">
+            <p>Contact</p>
+            <p>Email: celeste@gmail.com</p>
+            <p>Boite postale: 30 BP Abidjan 2001</p>
+          </div>
+          <!--ligne de separation -->
+        </div>
+        <div class="h-1 w-[95%] bg-white"></div>
+        <span>&copy;2026 L'Archiviste Céleste - Tous droit reserve</span>
+      </footer>
+    </div>
+  </body>
+</html>
