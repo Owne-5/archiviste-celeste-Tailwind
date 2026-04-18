@@ -1,8 +1,9 @@
 # L'Archiviste Céleste — Site Vitrine
 
 Site vitrine réalisé dans le cadre du module Tailwind,
-Theme : Astronomie
 Bachelor Développement Web — 2026.
+
+- Theme : Astronomie
 
 ## Auteur
 
